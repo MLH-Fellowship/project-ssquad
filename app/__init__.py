@@ -14,6 +14,10 @@ def index():
 def sebasProfile():
     return "hello sebas"
 
+@app.route('/sebasPage')
+def sebasPage():
+    return render_template('aboutSebas.html', url=os.getenv("URL"))
+
 @app.route('/aboutSally')
 def sallysProfile():
     return "hello Sally"
