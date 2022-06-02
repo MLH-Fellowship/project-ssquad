@@ -36,5 +36,18 @@
         </div>
         <h1>{{ title }}</h1>
     </div>
+    <div class="more-inf-box">
+        <button id="toSebasButton" class="more-inf-but">About Sebastian!</button>
+        <button id="toSallyButton" class="more-inf-but">About Sally!</button>
+    </div>
 </body>
+
+<script type="text/javascript">
+    document.getElementById("toSebasButton").onclick = function () {
+        window.location.href = "http://localhost:5000/aboutSebas";
+    };
+    document.getElementById("toSallyButton").onclick = function () {
+        window.location.href = "http://localhost:5000/aboutSally";
+    };
+</script>
 </html>
