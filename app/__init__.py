@@ -11,13 +11,9 @@ def index():
     return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"))
 
 @app.route('/aboutSebas')
-def sebasProfile():
-    return "hello sebas"
-
-@app.route('/sebasPage')
 def sebasPage():
-    return render_template('aboutSebas.html', url=os.getenv("URL"))
+    return render_template('sebastian.html', url=os.getenv("URL"))
 
 @app.route('/aboutSally')
 def sallysProfile():
-    return "hello Sally"
+    return render_template('sally.html', url=os.getenv("URL"))
