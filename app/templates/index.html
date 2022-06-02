@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class="nav-bar">
+    <!--<header class="nav-bar">
         <div class="nav-content">
             <a href="/">
                 <div class="nav-logo">
@@ -35,19 +35,94 @@
             <img src="./static/img/logo.jpg">
         </div>
         <h1>{{ title }}</h1>
+    </div>-->
+
+    <!--Navigation Bar-->
+    <div class="navbar">
+        <a href="#home">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="sebastian.html">Sebastian</a>
+                <a href="sally.html">Sally</a>
+            </div>
+        </div>
+
+        <div class="dropdown">      
+            <button class="dropbtn">Work
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Sebastian</a>
+                <a href="#">Sally</a>
+            </div>
+        </div>
+
+        <div class="dropdown">      
+            <button class="dropbtn">Hobbies
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Sebastian</a>
+                <a href="#">Sally</a>
+            </div>
+        </div>
+
+        <div class="dropdown">      
+            <button class="dropbtn">Education
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Sebastian</a>
+                <a href="#">Sally</a>
+            </div>
+        </div>
+
+        <div class="dropdown">      
+            <button class="dropbtn">Travel With Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Sebastian</a>
+                <a href="#">Sally</a>
+            </div>
+        </div>
+
     </div>
-    <div class="more-inf-box">
-        <button id="toSebasButton" class="more-inf-but">About Sebastian!</button>
-        <button id="toSallyButton" class="more-inf-but">About Sally!</button>
-    </div>
+
+
+    <!--Home Page-->
+    <section id="home">
+        <div class="welcome-message">Welcome to the SSquad!</div>
+    </section>
+
+    <!--About Us-->
+    <section id="about-us">
+        <div class="about">Who's the SSquad?</div>
+        <div class="row">
+            <div class="column">
+                <img src="./static/img/logo.jpg">
+            </div>
+            
+            <div class="column">
+                <img src="./static/img/logo.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">
+                Sebastian
+            </div>
+            <div class="label">
+                Sally
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
-<script type="text/javascript">
-    document.getElementById("toSebasButton").onclick = function () {
-        window.location.href = "http://localhost:5000/sebasPage";
-    };
-    document.getElementById("toSallyButton").onclick = function () {
-        window.location.href = "http://localhost:5000/aboutSally";
-    };
-</script>
 </html>
