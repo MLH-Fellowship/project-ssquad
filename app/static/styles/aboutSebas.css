@@ -76,6 +76,7 @@
 #banner .my-name{
     padding-top: 5vh;
     font-size: 50px;
+    font-weight: bolder;
 }
 
 #banner img {
@@ -84,4 +85,60 @@
     max-height: 50%;
     margin-top: 5vh;
     margin-bottom: 5vh;
+}
+
+#work{
+    min-height: 80vh;
+    background-color: rgb(127, 186, 127);
+    text-align: center;
+}
+
+#work-sec-title{
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    font-size: 50px;
+    font-weight:bold;
+}
+
+.images-row{
+    padding: 2vh;
+    display:flex;
+    justify-content: center;
+}
+
+.img-in-row{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width:  480px;
+    height: 270px;
+
+}
+
+.img-cont{
+    text-align: center;
+    width: 33.33%;
+}
+.work-descr-row{
+    display: flex;
+    column-count: 3;
+}
+
+.job-info{
+    float: left;
+    width: 33.33%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.job-title{
+    text-align: center;
+    font-size: 25;
+}
+
+.job-descr{
+    font-size: 16;
+    text-align: left;
+}
+
+.tech-list {
+    text-align: left;
 }
