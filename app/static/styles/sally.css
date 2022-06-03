@@ -37,16 +37,28 @@ img {
 #work{
     min-height: 100vh;
     background-color: rgb(191, 225, 255);
+    /*box-sizing:border-box;*/
+    padding-top: 5%;
+    
 }
 h2{
-    padding-top: 5%;
+    
+    
+    /*margin-top: 2%;*/
+    /*left: 50%;*/
+    /*top:2%;*/
     text-align: center;
+    padding-bottom: 3%;
+    /*width: 50%;
+    margin: 0 auto;*/
     font-family:'Courier New', Courier, monospace;
+    position: relative;
+    /*box-sizing:border-box;*/
     
 }
 #work .work-column{
     float: left;
-    margin-top: 5%;
+    /*top: 2%;*/
     margin-left: 10%;
     margin-right: 10%;
     width: 30%;
@@ -54,6 +66,7 @@ h2{
 
     position: relative;
     overflow: hidden;
+    /*box-sizing:border-box;*/
     /*border-radius: 50%;*/
 }
 
@@ -61,27 +74,32 @@ h2{
     float: left;
     text-align: center;
     font-size: 20px;
-    margin-top: 2%;
+    padding-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
     width: 30%;
     height: 50%;
-
+    box-sizing:border-box;
     position: relative;
 }
 
 #hobbies{
+    
     min-height: 100vh;
+    /*box-sizing:border-box;*/
+    padding-top: 0;
+    position: relative;
+    box-sizing:border-box;
 }
 
 #hobbies .hobby-column{
     float: left;
-    margin-top: 5%;
+    /*top: 3%;*/
     margin-left: 3%;
     margin-right: 2%;
     width: 28%;
     height: 50%;
-
+    box-sizing:border-box;
     position: relative;
     overflow: hidden;
     /*border-radius: 50%;*/
@@ -96,6 +114,31 @@ h2{
     margin-right: 2%;
     width: 28%;
     height: 50%;
-
+    /*box-sizing:border-box;*/
     position: relative;
+}
+
+#education{
+    min-height: 100vh;
+    background-color: rgb(191, 225, 255);
+    /*box-sizing:border-box;*/
+    /*padding-top:-1rem;*/
+    
+}
+
+#education .education-column{
+    display:flex;align-items:center;
+    line-height: 2;
+    font-size: 22px;
+    float: left;
+    /*top: 5%;*/
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 30%;
+    height: 50%;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    /*box-sizing:border-box;*/
+    /*border-radius: 50%;*/
 }
