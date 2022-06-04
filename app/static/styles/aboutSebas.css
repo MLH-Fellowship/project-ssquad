@@ -68,6 +68,7 @@
     display: block;
 }
 
+/* Banner section */
 #banner{
     min-height: 100vh;
     background-color: rgb(127, 233, 127);
@@ -87,6 +88,7 @@
     margin-bottom: 5vh;
 }
 
+/* Work experience section */
 #work{
     min-height: 80vh;
     background-color: rgb(127, 186, 127);
@@ -123,8 +125,7 @@
 }
 
 .job-info{
-    float: left;
-    width: 33.33%;
+    width: 33%;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
@@ -142,3 +143,36 @@
 .tech-list {
     text-align: left;
 }
+
+/* Hobbies section */
+
+#hobbies{
+    min-height: 50vh;
+    background-color: rgb(127, 233, 127);
+    text-align: center;
+}
+
+#hobbies-sec-title{
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    font-size: 50px;
+    font-weight:bold;
+}
+
+.hobby-descr-row{
+    display: flex;
+    column-count: 3;
+}
+
+.hobby-info{
+    width: 33%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.hobby-title{
+    text-align: center;
+    font-size: 25;
+}
+
+/* Education section */
