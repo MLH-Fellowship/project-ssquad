@@ -112,7 +112,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width:  480px;
     height: 270px;
-
 }
 
 .img-cont{
@@ -147,7 +146,7 @@
 /* Hobbies section */
 
 #hobbies{
-    min-height: 50vh;
+    min-height: 60vh;
     background-color: rgb(127, 233, 127);
     text-align: center;
 }
@@ -176,3 +175,51 @@
 }
 
 /* Education section */
+#education{
+    min-height: 85vh;
+    background-color: rgb(127, 186, 127);
+    text-align: center;
+    align-content: center;
+}
+#education-sec-title{
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    font-size: 50px;
+    font-weight:bold;
+}
+#education-row{
+    padding: 5vh;
+    display:flex;
+    align-items: center;
+}
+
+#educ-text-container{
+  width: fit-content;
+  height: fit-content;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+#educ-text-container:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+.education-text {
+    padding: 0.5vh;
+    text-align: left;
+    font-family: 'Roboto', serif;
+    font-size: 3.2em;
+    line-height: 1.5em;
+    font-weight: 100;
+}
+.img-in-row2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 85%;
+    max-height: auto;
+    float: right;
+}
+#education-row .div{
+    padding: 2vh;
+}
