@@ -16,7 +16,9 @@ def index():
 #Sebastian's Functions
 @app.route('/aboutSebas')
 def sebasProfile():
-    return render_template('sebastian.html', url=os.getenv("URL"))
+    return render_template('sebastian.html', extra_hobbies="Hobbies", hobby_list=["Surfing","Swimming","Dancing"],
+    extra_work="Work experiences", work_list=["Freelance web page dev","Indoor cycling staff"], 
+    extra_education="Education",education_list=["Harkness Highscool", "MLH Fellowship"])
 
 @app.endpoint("sebasWork")
 def sebasWork():
@@ -34,11 +36,17 @@ def sebasEducation():
 def sebasTravel():
     return render_template('sebastian.html', scrollToAnchor='travel')
 
+@app.route('/jinjaTest')
+def jinjTest():
+    return render_template('extraTemplate.html', url=os.getenv("URL"), my_string="Wheeeee!", my_list=[0,1,2,3,4,5])
+
 #Endpoints
 app.add_url_rule("/aboutSebas-work", endpoint="sebasWork")
 app.add_url_rule("/aboutSebas-hobbies", endpoint="sebasHobbies")
 app.add_url_rule("/aboutSebas-education", endpoint="sebasEducation")
 app.add_url_rule("/aboutSebas-travel", endpoint="sebasTravel")
+
+
 
 #Sally's Functions
 @app.route('/aboutSally')
