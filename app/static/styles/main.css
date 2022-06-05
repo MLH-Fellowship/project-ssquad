@@ -69,7 +69,7 @@
 }
 #home{
     min-height: 100vh;
-    background-color: rgb(191, 225, 255);
+    background-color: rgb(190, 252, 246);
 }
 #home .welcome-message{
     /*text-align: center;
@@ -104,10 +104,10 @@
     padding: 5%;*/
     float: left;
     margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 30%;
-    height: 50%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 25%;
+    height: 40%;
 
     position: relative;
     overflow: hidden;
