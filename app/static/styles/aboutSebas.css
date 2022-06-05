@@ -223,3 +223,68 @@
 #education-row .div{
     padding: 2vh;
 }
+
+/* Travel section */
+#travel{
+    min-height: 115vh;
+    background-color: rgb(127, 233, 127);
+    text-align: center;
+    align-content: center;
+}
+
+#travel-sec-title{
+    padding-top: 5vh;
+    font-size: 50px;
+    font-weight:bold;
+}
+
+#map-legend ul{
+    text-align: left;
+    font-size: 40px;
+    list-style-type: none;
+    padding-left: 15vh;
+}
+
+#curr-loc::before{
+    content: '';
+
+    display: inline-block;
+  
+    height: 50px;
+  
+    width: 50px;
+  
+    background-size: 50px;
+  
+    background-image: url('../img/star.svg');
+  
+    background-repeat: no-repeat;
+  
+    margin-right: 5px;
+}
+#visited::before{
+    content: '';
+
+    display: inline-block;
+  
+    height: 50px;
+  
+    width: 50px;
+  
+    background-size: 50px;
+  
+    background-image: url('../img/marker.png');
+  
+    background-repeat: no-repeat;
+  
+    margin-right: 5px;
+}
+
+
+#map{
+    width: 70%;
+    height: 70%;
+    transition: transform ease-in-out 0.3s;
+}
+
+#map:hover{transform: scale(1.1); }
