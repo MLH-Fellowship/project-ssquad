@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link lang='sass' rel="stylesheet" href="./static/styles/sally.css">
     <title>{{ title }}</title>
+    <script src="./static/styles/map.js"></script>
 </head>
 <body>
     <section id="about">
@@ -54,6 +55,127 @@
             <img src="./static/img/washu.jpg">
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+<section id="travel">
+
+    <h2>Countries I've visited</h2>
+
+
+    <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+    <div id="mapdiv"></div>
+    <script type="text/javascript">
+    var map = AmCharts.makeChart("mapdiv",{
+    type: "map",
+    theme: "dark",
+    projection: "mercator",
+    panEventsEnabled : true,
+    backgroundColor : "#535364",
+    backgroundAlpha : 1,
+    zoomControl: {
+    zoomControlEnabled : true
+    },
+    dataProvider : {
+    map : "worldHigh",
+    getAreasFromMap : true,
+    areas :
+    [
+        {
+            "id": "AT",
+            "showAsSelected": true
+        },
+        {
+            "id": "BE",
+            "showAsSelected": true
+        },
+        {
+            "id": "CZ",
+            "showAsSelected": true
+        },
+        {
+            "id": "FR",
+            "showAsSelected": true
+        },
+        {
+            "id": "DE",
+            "showAsSelected": true
+        },
+        {
+            "id": "HU",
+            "showAsSelected": true
+        },
+        {
+            "id": "IT",
+            "showAsSelected": true
+        },
+        {
+            "id": "NL",
+            "showAsSelected": true
+        },
+        {
+            "id": "NO",
+            "showAsSelected": true
+        },
+        {
+            "id": "ES",
+            "showAsSelected": true
+        },
+        {
+            "id": "SE",
+            "showAsSelected": true
+        },
+        {
+            "id": "CH",
+            "showAsSelected": true
+        },
+        {
+            "id": "TR",
+            "showAsSelected": true
+        },
+        {
+            "id": "GB",
+            "showAsSelected": true
+        },
+        {
+            "id": "CA",
+            "showAsSelected": true
+        },
+        {
+            "id": "US",
+            "showAsSelected": true
+        },
+        {
+            "id": "KR",
+            "showAsSelected": true
+        }
+    ]
+    },
+    areasSettings : {
+    autoZoom : true,
+    color : "#B4B4B7",
+    colorSolid : "#84ADE9",
+    selectedColor : "#84ADE9",
+    outlineColor : "#666666",
+    rollOverColor : "#9EC2F7",
+    rollOverOutlineColor : "#000000"
+    }
+    });
+    </script>
+    
+
+</section>
+
+
 
 
 </body>

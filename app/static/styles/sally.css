@@ -148,3 +148,30 @@ h2{
     /*border-radius: 50%;*/
 }
 
+
+
+#travel{
+    margin-top: 5%;
+    min-height: 100vh;
+    /*box-sizing:border-box;*/
+    padding-top: 0;
+    position: relative;
+    box-sizing:border-box;
+}
+
+/*h3{
+    margin: 0 auto;
+    margin-top: 4%;
+}*/
+#mapdiv{
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
