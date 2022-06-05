@@ -224,6 +224,12 @@
     padding: 2vh;
 }
 
+/* jinja section */
+#extra-jinja{
+    text-align: center;
+}
+
+
 /* Travel section */
 #travel{
     min-height: 115vh;
@@ -288,3 +294,4 @@
 }
 
 #map:hover{transform: scale(1.1); }
+

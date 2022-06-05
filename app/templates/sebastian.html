@@ -180,6 +180,30 @@
             </div>
         </div>
     </section>
+    <!--Jinja section-->
+    <section id="extra-jinja">
+        <p> {{extra_hobbies}}:</p>
+        <p>Number of extra hobbies: {{hobby_list|length}}</p>
+        <ul>
+        {% for n in hobby_list %}
+        <li>{{n}}</li>
+        {% endfor %}
+        </ul>    
+        <p> {{extra_work}}:</p>
+        <p>Number of extra work: {{work_list|length}}</p>
+        <ul>
+        {% for n in work_list %}
+        <li>{{n}}</li>
+        {% endfor %}
+        </ul>
+        <p> {{extra_education}}:</p>
+        <p>Number of extra education: {{education_list|length}}</p>
+        <ul>
+        {% for n in education_list %}
+        <li>{{n}}</li>
+        {% endfor %}
+        </ul>
+    </section>
     <!--Travel section-->
     <section id="travel">
         <div id="travel-sec-title">Where have I been?</div>
@@ -191,6 +215,7 @@
         </div>
         <img id="map" src="./static/img/placesVisited.jpg">
     </section>
+    
     {% if scrollToAnchor %}
     <script>
         document.addEventListener("DOMContentLoaded", function() {
