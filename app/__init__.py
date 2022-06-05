@@ -18,5 +18,21 @@ def sebasPage():
     return render_template('sebastian.html', url=os.getenv("URL"))
 
 @app.route('/aboutSally')
-def sallysProfile():
+def sallyProfile():
     return render_template('sally.html', url=os.getenv("URL"))
+
+@app.route('/aboutSally-work')
+def sallyWork():
+    return render_template('sally.html', scrollToAnchor='work')
+
+@app.route('/aboutSally-hobbies')
+def sallyHobbies():
+    return render_template('sally.html', scrollToAnchor='hobbies')
+
+@app.route('/aboutSally-education')
+def sallyEducation():
+    return render_template('sally.html', scrollToAnchor='education')
+
+@app.route('/aboutSally-travel')
+def sallyTravel():
+    return render_template('sally.html', scrollToAnchor='travel')
