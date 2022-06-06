@@ -111,7 +111,7 @@ img {
 
 #work{
     min-height: 100vh;
-    background-color: rgb(191, 225, 255);
+    background-color: rgb(213, 234, 255);
 
     /*box-sizing:border-box;*/
     padding-top: 5%;
@@ -200,7 +200,7 @@ h2{
 
 #education{
     min-height: 100vh;
-    background-color: rgb(191, 225, 255);
+    background-color: rgb(213, 234, 255);
     /*box-sizing:border-box;*/
     /*padding-top:-1rem;*/
     
@@ -259,7 +259,7 @@ ul {
 }
 
 #travel{
-    background-color: rgb(191, 225, 255);
+    background-color: rgb(213, 234, 255);
     /*margin-top: 5%;*/
     min-height: 100vh;
     /*box-sizing:border-box;*/
