@@ -71,7 +71,7 @@
 /* Banner section */
 #banner{
     min-height: 100vh;
-    background-color: rgb(127, 233, 127);
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 #banner .my-name{
@@ -90,8 +90,8 @@
 
 /* Work experience section */
 #work{
-    min-height: 80vh;
-    background-color: rgb(127, 186, 127);
+    min-height: 100vh;
+    background-color: rgb(216, 255, 214);
     text-align: center;
 }
 
@@ -147,7 +147,7 @@
 
 #hobbies{
     min-height: 60vh;
-    background-color: rgb(127, 233, 127);
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -176,8 +176,8 @@
 
 /* Education section */
 #education{
-    min-height: 85vh;
-    background-color: rgb(127, 186, 127);
+    min-height: 100vh;
+    background-color: rgb(216, 255, 214);
     text-align: center;
     align-content: center;
 }
@@ -233,7 +233,7 @@
 /* Travel section */
 #travel{
     min-height: 115vh;
-    background-color: rgb(127, 233, 127);
+    background-color: rgb(216, 255, 214);
     text-align: center;
     align-content: center;
 }
