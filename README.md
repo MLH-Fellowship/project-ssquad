@@ -2,22 +2,22 @@
 
 The portfolio website of Sebastian and Sally from pod 15 of the MLH summer 2022 batch.
 
-# Inspiration
+## Inspiration
 Our portfolio name, the SSquad, was inspired from the fact that both of our names start with an "s" and we make a fun programming squad.
 
-# What it does
-Clicking on the photos that appear after you scroll down from the initial landing page leads to a page introducing each member of the SSquad. Each page consists of full-screen sections describing the respective member's previous work experience, hobbies, education, and where they've traveled before. Each section can also be accessed from the navigation bar at the top of any page on the website.
+## What it does
+Clicking on the photos that appear after you scroll down from the initial landing page leads to pages introducing each member of the SSquad. Each page consists of full-screen sections describing the respective member's previous work experience, hobbies, education, and where they've traveled before. Each section can also be accessed from the navigation bar at the top of any page on the website.
 
-# How we built it
+## How we built it
 For remote collaboration, we used Discord, Github, and Zoom. Each web page was structured with HTML and styled with CSS. Python and Flask was used to re-route between pages and sections. Jinja was used to create a template for additional work experience, hobbies, and education.
 
-# Challenges we ran into
+## Challenges we ran into
 Neither of us were familiar with Jinja so it took some time to read its documentation and incorporate it into our HTML code. It had also been a while since either of us had used HTML and CSS extensively so re-learning how to use both languages also required reading documentation and watching tutorials.
 
-# Accomplishments that we're proud of
+## Accomplishments that we're proud of
 We're proud of completing the Github, portfolio, and Flask tasks as a team in incremental steps and carefully managing the time we had until the deadline. We're also proud of learning Jinja and becoming re-acquainted with HTML and CSS.
 
-# What we learned
+## What we learned
 * Github
     * how to create issues, branches for each issue, and pull requests
 * HTML
@@ -25,7 +25,7 @@ We're proud of completing the Github, portfolio, and Flask tasks as a team in in
 * CSS
     * how to style HTML including centering, shaping, spacing, and coloring elements.
 
-# What's next for The SSquad
+## What's next for The SSquad
 We hope to use the Github best practices and technologies we learned while building this portfolio for more exciting projects in the future.
 
 
