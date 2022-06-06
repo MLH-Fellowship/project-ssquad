@@ -68,6 +68,26 @@
     display: block;
 }
 
+
+/* Font styles */
+h2{
+    
+    font-size: 40px;
+    /*margin-top: 2%;*/
+    /*left: 50%;*/
+    /*top:2%;*/
+    text-align: center;
+    padding-bottom: 3%;
+    /*width: 50%;
+    margin: 0 auto;*/
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    /*box-sizing:border-box;*/
+    position: relative;
+    padding-top: 3vh;
+    
+}
+
 /* Banner section */
 #banner{
     min-height: 100vh;
@@ -95,13 +115,6 @@
     text-align: center;
 }
 
-#work-sec-title{
-    padding-top: 5vh;
-    padding-bottom: 3vh;
-    font-size: 50px;
-    font-weight:bold;
-}
-
 .images-row{
     padding: 2vh;
     display:flex;
@@ -110,13 +123,15 @@
 
 .img-in-row{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width:  480px;
-    height: 270px;
+    width:  46.1vh;
+    height: 26vh;
 }
 
 .img-cont{
     text-align: center;
-    width: 33.33%;
+    width: 33%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .work-descr-row{
     display: flex;
@@ -151,12 +166,6 @@
     text-align: center;
 }
 
-#hobbies-sec-title{
-    padding-top: 5vh;
-    padding-bottom: 3vh;
-    font-size: 50px;
-    font-weight:bold;
-}
 
 .hobby-descr-row{
     display: flex;
@@ -176,41 +185,26 @@
 
 /* Education section */
 #education{
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: rgb(216, 255, 214);
     text-align: center;
     align-content: center;
 }
-#education-sec-title{
-    padding-top: 5vh;
-    padding-bottom: 3vh;
-    font-size: 50px;
-    font-weight:bold;
-}
+
 #education-row{
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 5vh;
     display:flex;
     align-items: center;
 }
 
-#educ-text-container{
-  width: fit-content;
-  height: fit-content;
-  background: white;
-  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
-  box-shadow: 20px 20px rgba(0,0,0,.15);
-  transition: all .4s ease;
-}
-#educ-text-container:hover {
-    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
-    box-shadow: 10px 10px rgba(0,0,0,.25);
-}
 
 .education-text {
-    padding: 0.5vh;
+    padding: 1vh;
     text-align: left;
     font-family: 'Roboto', serif;
-    font-size: 3.2em;
+    font-size: 1.8em;
     line-height: 1.5em;
     font-weight: 100;
 }
@@ -220,13 +214,34 @@
     max-height: auto;
     float: right;
 }
-#education-row .div{
-    padding: 2vh;
-}
+
 
 /* jinja section */
 #extra-jinja{
+    min-height: 50vh;
+}
+
+#extra-jinja p{
     text-align: center;
+}
+
+#extra-jinja ul{
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+.extra-column{
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 22px;
+    float: left;
+    width: 33.3%;
+    height: 50%;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
 }
 
 
@@ -238,11 +253,6 @@
     align-content: center;
 }
 
-#travel-sec-title{
-    padding-top: 5vh;
-    font-size: 50px;
-    font-weight:bold;
-}
 
 #map-legend ul{
     text-align: left;
