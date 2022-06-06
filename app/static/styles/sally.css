@@ -263,7 +263,7 @@ ul {
     /*margin-top: 5%;*/
     min-height: 100vh;
     /*box-sizing:border-box;*/
-    padding-top: 3%;
+    /*padding-top: 1%;*/
     position: relative;
     box-sizing:border-box;
 }
@@ -274,7 +274,7 @@ ul {
 }*/
 #mapdiv{
     width: 75%;
-    height: 75%;
+    height: 70%;
     margin: 0 auto;
 }
 

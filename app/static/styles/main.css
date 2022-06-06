@@ -74,6 +74,7 @@
 #home .welcome-message{
     /*text-align: center;
     vertical-align: middle;*/
+    
     position: absolute;
     font-size: 50px;
     top: 50%;
@@ -95,10 +96,10 @@
     
 }
 
-/*.row{
-    display:flex;
+.row{
+    padding-top: 3%;
 }
-*/
+
 .column{
     /*box-shadow: 10px 10px 10px 10px rgba(154, 169, 250, 0.19), 10px 10px 10px 10px rgba(154, 169, 250, 0.19);*/
 
