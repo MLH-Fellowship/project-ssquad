@@ -66,13 +66,13 @@
 
     <!--Home Page-->
     <section id="banner">
-        <div class="my-name">Sebastian Rojas Salazar</div>
-        <img src="./static/img/sebasPic.jpg">
+        <div class="my-name"><h2>Sebastian Rojas Salazar</h2></div>
+        <img style = width:30%; height:30%; src="./static/img/sebasPic.jpg">
     </section>
     
-    <!--Work Experiences section-->
+    <!--Work Experience section-->
     <section id="work">
-        <div id="work-sec-title">Work Experience and Projects</div>
+        <h2>Work Experience and Projects</h2>
         <div class="images-row">
             <div class="img-cont">
                 <img class="img-in-row" src="./static/img/WorkE1.jpg">
@@ -84,7 +84,7 @@
                 <img class="img-in-row" src="./static/img/WorkE3.jpg">
             </div>
         </div>
-    <!--Work Experiences info-->
+    <!--Work Experience info-->
         <div class="work-descr-row">
             <div class="job-info">
                 <p class="job-title">
@@ -139,7 +139,7 @@
 
     <!--Hobbies section-->
     <section id="hobbies">
-        <div id="hobbies-sec-title">Hobbies</div>
+        <h2>Hobbies</h2>
         <!--IMG row-->
         <div class="images-row">
             <div class="img-cont">
@@ -166,15 +166,15 @@
     </section>
     <!--Education section-->
     <section id="education">
-        <div id="education-sec-title">Education</div>
+        <h2>Education</h2>
         <div id="education-row">
-            <div id="educ-text-container">
+           
                 <p class="education-text">
-                    I am a rising senior at<br>
+                    I am a rising senior at
                     Monterrey Institute of Technology<br>
                     studying computer science. 
                 </p>
-            </div>
+
             <div>
             <img class="img-in-row2" src="./static/img/educationImg.jpg">
             </div>
@@ -182,31 +182,41 @@
     </section>
     <!--Jinja section-->
     <section id="extra-jinja">
-        <p> {{extra_hobbies}}:</p>
-        <p>Number of extra hobbies: {{hobby_list|length}}</p>
-        <ul>
-        {% for n in hobby_list %}
-        <li>{{n}}</li>
-        {% endfor %}
-        </ul>    
-        <p> {{extra_work}}:</p>
-        <p>Number of extra work: {{work_list|length}}</p>
-        <ul>
-        {% for n in work_list %}
-        <li>{{n}}</li>
-        {% endfor %}
-        </ul>
-        <p> {{extra_education}}:</p>
-        <p>Number of extra education: {{education_list|length}}</p>
-        <ul>
-        {% for n in education_list %}
-        <li>{{n}}</li>
-        {% endfor %}
-        </ul>
+        <h2>More about me</h2>
+
+        <div class="extra-column">
+            <p>Hobbies:</p>
+            
+            <ul>
+            {% for n in hobby_list %}
+            <li>{{n}}</li>
+            {% endfor %}
+            </ul>    
+        </div>
+
+        <div class="extra-column">
+            <p>Programming Projects:</p>
+            
+            <ul>
+            {% for n in work_list %}
+            <li>{{n}}</li>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <div class="extra-column">
+            <p> Education:</p>
+            <ul>
+            {% for n in education_list %}
+            <li>{{n}}</li>
+            {% endfor %}
+            </ul>
+        </div>
     </section>
+
     <!--Travel section-->
     <section id="travel">
-        <div id="travel-sec-title">Where have I been?</div>
+        <h2>Where have I been?</h2>
         <div id="map-legend">
             <ul>
                 <li id="curr-loc">Current Location</li>
