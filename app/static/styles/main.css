@@ -69,11 +69,12 @@
 }
 #home{
     min-height: 100vh;
-    background-color: rgb(190, 252, 246);
+    background-color: rgb(196, 255, 251);
 }
 #home .welcome-message{
     /*text-align: center;
     vertical-align: middle;*/
+    
     position: absolute;
     font-size: 50px;
     top: 50%;
@@ -95,11 +96,13 @@
     
 }
 
-/*.row{
-    display:flex;
+.row{
+    padding-top: 3%;
 }
-*/
+
 .column{
+    /*box-shadow: 10px 10px 10px 10px rgba(154, 169, 250, 0.19), 10px 10px 10px 10px rgba(154, 169, 250, 0.19);*/
+
     /*flex: 40%;
     padding: 5%;*/
     float: left;
@@ -112,6 +115,14 @@
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+}
+#sally-column{
+    box-shadow: 10px 10px 10px 10px rgba(154, 169, 250, 0.19), 10px 10px 10px 10px rgba(154, 169, 250, 0.19);
+    
+}
+
+#sebas-column{
+    box-shadow: 10px 10px 10px 10px rgba(133, 249, 160, 0.19), 10px 10px 10px 10px rgba(133, 249, 160, 0.19);
 }
 .row:after {
     content: "";

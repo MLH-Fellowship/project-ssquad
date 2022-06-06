@@ -74,11 +74,13 @@
 h1{
     margin-top: 2%;
     text-align: center;
+    font-size: 35px;
     font-family:'Courier New', Courier, monospace;
     position: relative;
 }
 
 #about{
+    padding-top: 2%;
     min-height: 100vh;
 }
 
@@ -117,7 +119,7 @@ img {
 }
 h2{
     
-    
+    font-size: 30px;
     /*margin-top: 2%;*/
     /*left: 50%;*/
     /*top:2%;*/
@@ -221,13 +223,47 @@ h2{
     /*border-radius: 50%;*/
 }
 
+#extra-jinja{
+    padding-top: 4%;
+    min-height: 50vh;
+}
+p{
+    
+    text-align: center;
+}
 
+ul {
+    
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+.extra-column{
+    /*display:flex;
+    align-items:center;*/
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 22px;
+    float: left;
+    /*top: 5%;*/
+    /*padding-left: 3%;*/
+    /*margin-left: 3%;
+    margin-right: 3%;*/
+    width: 33.3%;
+    height: 50%;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+}
 
 #travel{
-    margin-top: 5%;
+    background-color: rgb(191, 225, 255);
+    /*margin-top: 5%;*/
     min-height: 100vh;
     /*box-sizing:border-box;*/
-    padding-top: 0;
+    /*padding-top: 1%;*/
     position: relative;
     box-sizing:border-box;
 }
@@ -238,7 +274,7 @@ h2{
 }*/
 #mapdiv{
     width: 75%;
-    height: 75%;
+    height: 70%;
     margin: 0 auto;
 }
 
