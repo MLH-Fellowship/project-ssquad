@@ -16,31 +16,31 @@ def index():
 #Sebastian's Functions
 @app.route('/aboutSebas')
 def sebasProfile():
-    return render_template('sebastian.html', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Swimming","Reading"],
+    return render_template('sebastian.html', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Surfing","Reading"],
     extra_work="Work experiences", work_list=["Freelance web page dev","Indoor cycling staff"], 
     extra_education="Education",education_list=["Harkness Highscool", "MLH Fellowship"])
 
 @app.endpoint("sebasWork")
 def sebasWork():
-    return render_template('sebastian.html', scrollToAnchor='work', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Swimming","Reading"],
+    return render_template('sebastian.html', scrollToAnchor='work', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Surfing","Reading"],
     extra_work="Work experiences", work_list=["Freelance web page dev","Indoor cycling staff"], 
     extra_education="Education",education_list=["Harkness Highscool", "MLH Fellowship"])
 
 @app.endpoint("sebasHobbies")
 def sebasHobbies():
-    return render_template('sebastian.html', scrollToAnchor='hobbies', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Swimming","Reading"],
+    return render_template('sebastian.html', scrollToAnchor='hobbies', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Surfing","Reading"],
     extra_work="Work experiences", work_list=["Freelance web page dev","Indoor cycling staff"], 
     extra_education="Education",education_list=["Harkness Highscool", "MLH Fellowship"])
 
 @app.endpoint("sebasEducation")
 def sebasEducation():
-    return render_template('sebastian.html', scrollToAnchor='education', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Swimming","Reading"],
+    return render_template('sebastian.html', scrollToAnchor='education', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Surfing","Reading"],
     extra_work="Work experiences", work_list=["Freelance web page dev","Indoor cycling staff"], 
     extra_education="Education",education_list=["Harkness Highscool", "MLH Fellowship"])
 
 @app.endpoint("sebasTravel")
 def sebasTravel():
-    return render_template('sebastian.html', scrollToAnchor='travel', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Swimming","Reading"],
+    return render_template('sebastian.html', scrollToAnchor='travel', extra_hobbies="Hobbies", hobby_list=["Going to the beach","Surfing","Reading"],
     extra_work="Work experiences", work_list=["Freelance web page dev","Indoor cycling staff"], 
     extra_education="Education",education_list=["Harkness Highscool", "MLH Fellowship"])
 
