@@ -1,1 +1,11 @@
-tmux new -d 'cd /home/project-ssquad-sebastian; git fetch && git reset origin/main --hard; . python3-virtualenv/bin/activate; pip install -r requirements.txt; flask run --host=0.0.0.0'
+#!/bin/bash
+
+tmux kill-server || echo "No tmux server to kill
+
+cd /home/project-ssquad-sebastian
+git fetch && git reset origin/main
+
+source python3-virtualenv/bin/activate
+pip3 install -r requirements.txt
+
+tmux new-session -d -s myportfolio 'source python3-virtualenv/bin/activate && flask run --host=0.0.0.0'
