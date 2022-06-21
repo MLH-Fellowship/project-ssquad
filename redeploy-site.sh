@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tmux kill-server || echo "No tmux server to kill
+tmux kill-server || echo "No tmux server to kill"
 
 cd /home/project-ssquad-sebastian
 git fetch && git reset origin/main
