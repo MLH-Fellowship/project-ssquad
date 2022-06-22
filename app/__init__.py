@@ -59,31 +59,31 @@ app.add_url_rule("/aboutSebas-travel", endpoint="sebasTravel")
 #Sally's Functions
 @app.route('/aboutSally')
 def sallyProfile():
-    return render_template('sally.html', extra_hobbies="Hobbies", hobby_list=["Watching Neflix","Listening to music"],
+    return render_template('sally.html', extra_hobbies="Hobbies", hobby_list=["Watching YouTube","Listening to music"],
     extra_work="Projects", work_list=["Task Tracker Website","News Website"], 
     extra_education="Education", education_list=["Saratoga High School", "MLH Fellowship"])
 
 @app.endpoint('sallyWork')
 def sallyWork():
-    return render_template('sally.html', scrollToAnchor='work', extra_hobbies="Hobbies", hobby_list=["Watching Neflix","Listening to music"],
+    return render_template('sally.html', scrollToAnchor='work', extra_hobbies="Hobbies", hobby_list=["Watching YouTube","Listening to music"],
     extra_work="Projects", work_list=["Task Tracker Website","News Website"], 
     extra_education="Education", education_list=["Saratoga High School", "MLH Fellowship"])
 
 @app.endpoint('sallyHobbies')
 def sallyHobbies():
-    return render_template('sally.html', scrollToAnchor='hobbies', extra_hobbies="Hobbies", hobby_list=["Watching Neflix","Listening to music"],
+    return render_template('sally.html', scrollToAnchor='hobbies', extra_hobbies="Hobbies", hobby_list=["Watching YouTube","Listening to music"],
     extra_work="Projects", work_list=["Task Tracker Website","News Website"], 
     extra_education="Education", education_list=["Saratoga High School", "MLH Fellowship"])
 
 @app.endpoint('sallyEducation')
 def sallyEducation():
-    return render_template('sally.html', scrollToAnchor='education', extra_hobbies="Hobbies", hobby_list=["Watching Neflix","Listening to music"],
+    return render_template('sally.html', scrollToAnchor='education', extra_hobbies="Hobbies", hobby_list=["Watching YouTube","Listening to music"],
     extra_work="Projects", work_list=["Task Tracker Website","News Website"], 
     extra_education="Education", education_list=["Saratoga High School", "MLH Fellowship"])
 
 @app.endpoint('sallyTravel')
 def sallyTravel():
-    return render_template('sally.html', scrollToAnchor='travel', extra_hobbies="Hobbies", hobby_list=["Watching Neflix","Listening to music"],
+    return render_template('sally.html', scrollToAnchor='travel', extra_hobbies="Hobbies", hobby_list=["Watching YouTube","Listening to music"],
     extra_work="Projects", work_list=["Task Tracker Website","News Website"], 
     extra_education="Education", education_list=["Saratoga High School", "MLH Fellowship"])
 
