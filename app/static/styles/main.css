@@ -1,121 +1,114 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+*{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
-    font-family: "Oswald", sans-serif;
+    /* Padding top 3px rest 0*/
+    padding: 3px 0 0 0; 
+}
+/* Nav bar section*/
+.navbar {
+    margin-top: 5px ;
+	width: 100%;
+	margin: 0;
 }
 
-/* Navbar container */
-.wrapper{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
-    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
-    background: #000;
-    clip-path: circle(25px at calc(100% - 45px) 45px);
-    transition: all 0.3s ease-in-out;
-  }
-  #active:checked ~ .wrapper{
-    clip-path: circle(75%);
-  }
-  .menu-btn{
-    position: absolute;
-    z-index: 2;
-    right: 20px;
-    top: 20px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-    background: #000;
-    transition: all 0.3s ease-in-out;
-  }
-  #active:checked ~ .menu-btn{
-    color: #fff;
-  }
-  #active:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  .wrapper ul{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-  }
-  .wrapper ul li{
-    margin: 15px 0;
-  }
-  .wrapper ul li a{
-    color: none;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 500;
-    padding: 5px 30px;
-    color: #fff;
-    border-radius: 50px;
-    background: #000;
-    position: relative;
-    line-height: 50px;
-    transition: all 0.3s ease;
-  }
-  .wrapper ul li a:after{
-    position: absolute;
-    content: "";
-    background: #fff;
-     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-    /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
-    width: 104%;
-    height: 110%;
-    left: -2%;
-    top: -5%; /* if the font is 'Oswald'*/
-    border-radius: 50px;
-    transform: scaleY(0);
-    z-index: -1;
-    animation: rotate 1.5s linear infinite;
-    transition: transform 0.3s ease;
-  }
-  .wrapper ul li a:hover:after{
-    transform: scaleY(1);
-  }
-  .wrapper ul li a:hover{
-    color: #fff;
-  }
-  input[type="checkbox"]{
-    display: none;
-  }
-
+header {
   
-  @keyframes rotate {
-    0%{
-      filter: hue-rotate(0deg);
-    }
-    100%{
-      filter: hue-rotate(360deg);
-    }
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+/*Banner section*/
+
+/*Background video*/
+.back-video{
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+     /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    height: auto;
+    width: 100%;
   }
+}
 
-/* Home section*/
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    height: auto;
+    width: 100%;
+  }
+}
+/* Banner content*/
 #home{
-
+    margin-top: 3px;
+    width: 100%;
     min-height: 100vh;
-    background-color: rgb(194, 110, 0);
+    
 }
 #home .welcome-message{
     /*text-align: center;
     vertical-align: middle;*/
-    
+    color: white;
     position: absolute;
     font-size: 50px;
     top: 50%;
@@ -132,65 +125,27 @@
 }
 
 #about-me .about{
-    margin-top: 5%;
+    margin-top: 3%;
     text-align: center;
     font-size: 30px;
-    
+    margin-bottom: 1%;
 }
 
 .row{
-    padding-top: 3%;
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
-.column{
-    /*box-shadow: 10px 10px 10px 10px rgba(154, 169, 250, 0.19), 10px 10px 10px 10px rgba(154, 169, 250, 0.19);*/
-
-    /*flex: 40%;
-    padding: 5%;*/
-
-    width: 25%;
-    height: 40%;
-
-    
-    border-radius: 50%;
-}
-
-
-#sebas-column{
-    box-shadow: 10px 10px 10px 10px rgba(133, 249, 160, 0.19), 10px 10px 10px 10px rgba(133, 249, 160, 0.19);
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 img {
+    box-shadow: 10px 10px 10px 10px rgba(133, 249, 160, 0.19), 10px 10px 10px 10px rgba(133, 249, 160, 0.19);
     border-radius: 50%;
-    /*float:left;*/
-    width: 100%;
-    margin-right: 1%; 
-    margin-bottom: 0.5em;
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     display: inline;
-    margin: 0 auto;
-    height: 50%;
-    /*width: auto;*/
-}
-
-.label{
-    float: left;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 30%;
-    height: 50%;
-
-    position: relative;
+    
 }
 
 

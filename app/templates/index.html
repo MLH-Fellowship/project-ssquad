@@ -23,12 +23,10 @@
 
     <title>{{ title }}</title>
 </head>
-
-<body>
-    <input type="checkbox" id="active">
-    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-    <!--Navigation Bar-->
-    <div class="wrapper">
+<header>
+ <!--Navigation Bar-->
+ <div class="navbar">
+    <nav>
         <ul>
             <li><a href="http://redsportfolio.duckdns.org:5000/">Home</a></li>
             <li><a href="http://redsportfolio.duckdns.org:5000/aboutSebas">About Me</a></li>
@@ -37,32 +35,29 @@
             <li><a href="http://redsportfolio.duckdns.org:5000/aboutSebas-education">Education</a></li>
             <li><a href="http://redsportfolio.duckdns.org:5000/aboutSebas-travel">Travel With Me</a></li>
         </ul>
-    </div>
-
-
-    <!--Home Page-->
+    </nav>
+ </div>
+</header>
+<body>
+    <!--Home Page Banner-->
+    
     <section id="home">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./static/img/bannerBackground.mp4" type="video/mp4">
+        </video>
         <div class="welcome-message">Welcome to my Portfolio!</div>
+        
     </section>
 
-    <!--About Us-->
+    <!--About me brief-->
     <section id="about-me">
-        <div class="about">I'm a full stack developer from Mexico</div>
+        <div class="about">My name is Sebastian Rojas</div>
         <div class="row">
-            
-            <div class="column" id="sebas-column">
-                
-                    <a href="http://redsportfolio.duckdns.org:5000/aboutSebas">
-                        <img src="./static/img/sebasPic.jpg">
-                    </a>
-                
-            </div>
+            <a href="http://redsportfolio.duckdns.org:5000/aboutSebas">
+                <img src="./static/img/sebasPic.jpg">
+            </a>
         </div>
-
-        <div class="row">
-            <div class="label">
-                Sebastian
-            </div>
+        <div class="about">I am a full stack developer and CS Student at ITESM</div>
         </div>
     </section>
 
