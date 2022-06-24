@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+</head>
+<body>
+    
+    <!--- HTML form data --->
+    
+    <form id="form">
+        <label for="name">Name:</label>
+        <input name="name" id="name" type="text"><br>
+        
+        <label for="email">Email:</label>
+        <input name="email" id="email" type="text"><br>
+        
+        <label for="content">Content:</label>
+        <input name="content" id="content" type="text"><br>
+        
+        <button type="submit">Submit</button>
+    </form> 
+
+    <section>
+        
+        <ol>
+            {% for post in timeline_posts.timeline_posts %}
+            
+            <li>Name: {{post.name}}<br>
+                Email: {{post.email}}<br>
+                Content: {{post.content}}
+            </li>
+            <br>
+            {% endfor %}
+        </ol>   
+        
+    </section>
+    <script>
+        const form = document.getElementById('form');
+ 
+        form.addEventListener('submit', function(e) {
+            // Prevent default behavior:
+            e.preventDefault();
+            // Create new FormData object:
+            const formData = new FormData(form);
+            // Convert formData object to URL-encoded string:
+            const payload = new URLSearchParams(formData);
+            // Post the payload using Fetch:
+            fetch('/api/timeline_post', {
+            method: 'POST',
+            body: payload,
+            })
+            .then(res => res.json())
+            .then(data => console.log(data))
+            location.reload();
+        })
+    </script>
+</body>
+</html>
