@@ -1,6 +1,6 @@
 import os
 import datetime
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, Response
 from dotenv import load_dotenv
 from peewee import *
 from playhouse.shortcuts import model_to_dict
@@ -8,7 +8,11 @@ from playhouse.shortcuts import model_to_dict
 load_dotenv()
 app = Flask(__name__)
 
-mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),user=os.getenv("MYSQL_USER"),password=os.getenv("MYSQL_PASSWORD"),host=os.getenv("MYSQL_HOST"),port=3306)
+if os.getenv("TESTING") == "true":
+    print("Running in test mode")
+    mydb = SqliteDatabase('file:memory?mode=memory&cachce=shared', uri=True)
+else:
+    mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),user=os.getenv("MYSQL_USER"),password=os.getenv("MYSQL_PASSWORD"),host=os.getenv("MYSQL_HOST"),port=3306)
 
 print(mydb)
 
@@ -113,6 +117,12 @@ app.add_url_rule("/aboutSally-travel", endpoint="sallyTravel")
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
+    if 'name' not in request.form:
+        return Response("Invalid name", status=400)
+    if 'email' not in request.form or '@' not in request.form['email']:
+        return Response("Invalid email", status=400)
+    if 'content' not in request.form or request.form['content'] == '':
+        return Response("Invalid content", status=400)
     name = request.form['name']
     email = request.form['email']
     content = request.form['content']
